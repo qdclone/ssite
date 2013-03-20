@@ -9,6 +9,7 @@
 		return 's' + id++;
 	};
 	
+	spite.obj = {};
 	var auto = 'auto';
 	var widget = function(){};
 	widget.layout = function(optins){
@@ -22,22 +23,37 @@
 		self.attrs = $.extend({}, optins.attrs);
 		
 		if (!self.option.gid) self.option.gid = optins.gid = createId();
+		spite.obj[optins.gid] = self;
 		return self;
 	};
 	widget.layout.prototype.init = function(){
-		var self = this;
+		var self = this, target = spite.obj[self.option.target] && spite.obj[self.option.target].ele || self.option.target;
 		self.ele = $("<div>", self.attrs);
 		self.ele
 			.css(self.style).addClass('layout')
-			.appendTo(self.option.target);
+			.appendTo(target);
 		if (self.option.mode == 'float'){
 			self.ele.addClass('layout-left');
 		}
 		self.ele.attr('id', self.option.gid);
 		
+		var next = {};
 		self.ele.resizable({
-			containment: self.option.target,
-			grid : 4
+			containment: target,
+			grid : 4,
+			handles : 'e',
+			start: function( event, ui ){
+				next.ele = self.ele.next();
+				next.width = next.ele.width();
+			},
+			resize: function( event, ui ) {
+				var ori = ui.originalSize, now = ui.size;
+				next.ele.width(next.width - now.width + ori.width);
+				console.log(now);
+			},
+			stop: function( event, ui ){
+				
+			}
 		});
 		return self;
 	};
@@ -61,26 +77,26 @@ $(document).ready(function(){
 		}
 	};
 	layout.childs.items.push({
-		
+		style : {width: '496px'}
 	});
 	layout.childs.items.push({
-		
+		style : {width: '496px'}
 	});
 	(function(layout, parent){
 		var arg = arguments;
 		for (var i = 0, item = layout.items[i], len = layout.items.length; i < len; i++, item = layout.items[i]){
 			item.target = parent;
 			item.mode = layout.mode;
-			item.layout = new spite.widget.layout(item);
-			item.layout.init();
+			(new spite.widget.layout(item)).init();
 			if (item.childs) {
-				arg.callee(item.childs, item.layout.ele);
+				arg.callee(item.childs, item.gid);
 			}
 		}
 	})({items: [layout]}, '.custom_panel');
 	
-	//layout.layout.sortable();
-	layout.layout.disableSelection();
+	var ele = spite.obj[layout.gid].ele;
+	ele.sortable({ items: "> div" });
+	ele.disableSelection();
 	
 	window.layout = layout;
 });
