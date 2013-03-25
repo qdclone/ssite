@@ -161,3 +161,7 @@ pip-log.txt
 
 # Mac crap
 .DS_Store
+
+demo/jquery-ui-1.10.2.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ru.min.js
+
+demo/jquery-ui-1.10.2.custom/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ru.min.js
