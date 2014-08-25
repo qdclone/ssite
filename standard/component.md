@@ -1,8 +1,0 @@
-```javascript
-{
-	"name": "header",
-	"main" : "main.js",
-	"version": "0.0.1",
-	"dependencies": {}
-}
-```
