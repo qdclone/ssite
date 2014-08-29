@@ -1,0 +1,14 @@
+{
+  "name": "header",
+  "description": "",
+  "version": "0.0.1",
+  "keywords": [
+    "header",
+    "ui"
+  ],
+  "dependencies": {
+  },
+  "main" : "index.html",
+  "data" : "data.js",
+  "demo": ""
+}

@@ -1,6 +1,8 @@
 ssite
 =====
 
+  [![npm version](http://img.shields.io/npm/v/ssite.svg)](https://npmjs.org/package/ssite) [![build status](http://img.shields.io/travis/badges/ssite.svg)](https://travis-ci.org/badges/ssite)
+
 让前端工程师更专注于产品一点。拖拽可定制组件创造网站
 
 定位前端开发组件并且设计数据模型，运营拖拽制作页面并且配置数据
@@ -9,8 +11,8 @@ ssite
 
 ### 组件规范定义
 
-- [ ] [component.json](https://github.com/component/spec/blob/master/component.json/specifications.md)
-- [ ] 完成组件demo
+- [X] [component.json](https://github.com/component/spec/blob/master/component.json/specifications.md)
+- [X] 完成组件demo
 
 ### 数据格式规范
 
