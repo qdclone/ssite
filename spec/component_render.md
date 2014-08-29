@@ -4,6 +4,7 @@
 component参数main值为js格式时，使用以下规范驱动绘制
 
 处理阶段参考 vuejs
+
 vuejs_instantiation-options http://vuejs.org/api/instantiation-options.html
 
 ```javascript
