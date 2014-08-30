@@ -32,3 +32,6 @@ ssite
 - [ ] 页面管理
 - [ ] 解析页面依赖结构中依赖的数据格式生成表单
 
+## 兼容性
+
+兼容目标 Android Browser 2.3+、iOS Safari 6+、Chrome 21+
