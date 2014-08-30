@@ -1,0 +1,27 @@
+{
+	"name": "index demo",
+	"description": "one header",
+	"meta": {
+		"viewport" : "width=device-width"
+	},
+	"createTime": 123123123,
+	"layout" : [
+		"header",
+		"header@0.0.1:index.html",
+		{
+			"name": "header",
+			"version": "0.0.1",
+			"style": "background-color: red;",
+			"data": {"bgColor": "#fff", "fontColor": "#000"}
+		},
+		{
+			"name": "box",
+			"child": [
+				{
+					"name": "header",
+					"boxFlex": 1
+				}
+			]
+		}
+	]
+}
