@@ -7,31 +7,41 @@ ssite
 
 定位前端开发组件并且设计数据模型，运营拖拽制作页面并且配置数据
 
+*目前项目还在设计阶段*
+
 ## 详细设计
 
-### 组件规范定义
+### 组件
 
-- [X] [component.json](https://github.com/component/spec/blob/master/component.json/specifications.md)
+- [X] 规范定义 参考 [component项目](https://github.com/component/spec/blob/master/component.json/specifications.md)
 - [X] 完成组件demo
+- [ ] 定义组件绘制事件
+- [ ] 完成基本组件
+	- [ ] box布局组件
+- [ ] 组件依赖的数据规范
 
-### 数据格式规范
+### 页面信息与布局
 
-- [ ] 要区分模板样式数据与业务逻辑数据吗？
-- [ ] 定义通用数据格式
-- [ ] 数据格式demo
-
-### 页面json数据格式
-
-- [ ] 定义支持页面结构布局
+- [ ] 定义支持页面结构布局规范
 - [ ] 自定义样式数据结构
 - [ ] 完成页面demo
-- [ ] 数据解析生成模块
+- [ ] 数据解析生成页面模块
+
+### 页面数据
+
+- [ ] 定义通用格式规范
+- [ ] 数据格式demo
 
 ### 后端管理
 
 - [ ] 页面管理
 - [ ] 解析页面依赖结构中依赖的数据格式生成表单
+- [ ] 组件布局管理
+	- [ ] 组件库管理
+	- [ ] 组件拖拽控制
+	- [ ] 组件属性管理
 
 ## 兼容性
 
-兼容目标 Android Browser 2.3+、iOS Safari 6+、Chrome 21+
+生成页面兼容目标 Android Browser 2.3+、iOS Safari 6+、Chrome 21+
+
