@@ -31,3 +31,7 @@ if (require.main === module) {
             app.get('env').toUpperCase(), app.get('port'));
     });
 }
+
+global.ssite = {
+    root: path.resolve(__dirname, '../')
+};

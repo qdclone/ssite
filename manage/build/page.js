@@ -8,12 +8,8 @@ function page(option){
 }
 
 page.prototype.toHtml = function(){
-	var cp, html = [];
-	for (var i = 0; i < layout.length; i++) {
-		cp = component(layout[i]);
-		html.push(cp.toHtml());
-	}
-	return html.join('\n');
+	var html = component(this.json.layout).toHtml();
+	return html;
 };
 
 module.exports = function (path) {
