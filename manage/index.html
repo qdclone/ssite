@@ -11,15 +11,39 @@
 	<script src="js/jquery-ui-1.10.2.custom.js"></script>
 	<script src="js/spite.js"></script>
 	
-	<style type="text/css">
-		.m_panel{background: url(bg.jpg);}
-		.layout{border:2px solid #999;}
-		.layout-left{float:left;min-width:100px;min-height:100px;}
-		.ui-sortable-helper{border:2px solid #111;}
-
-	</style>
+	<link href="/manage/static/index.scss" rel="stylesheet">
 </head>
 <body>
+<!-- 	<div id="loading" style="display: none;">
+		<div class="logo"></div>
+		<div class="mask"></div>
+		<div class="indicator" style="height: 100%;"></div>
+		<span>
+		正在读取 ...
+		</span>
+	</div>
+ -->
+ 
+	<div id="workspace">
+		<div id="components" style="-webkit-transform: translateX(180px); transform: translateX(180px);">
+		</div>
+		<div id="screens" class="screens" data-selectable="true">
+			<div id="screensA6AC7F402339" class="screen portrait iphone x100 active" data-selectable="true" style="height: 630px; width: 362px; margin-left: -181px; display: block;">
+				<div id="canvassA6AC7F402339" class="canvas" data-selectable="true">
+
+				</div>
+			</div>
+		</div>
+		<div id="screen_links" style="right: 0px;">
+			<div class="links jscroll" style="overflow: hidden; padding: 0px; width: 180px;">
+
+			</div>
+		</div>
+		<div id="inspector">
+		</div>
+	</div>
+
+
 <div id="FS_Custom_Container" class="m_panel">
     <div class="custom_panel">
 		

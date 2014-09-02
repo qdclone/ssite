@@ -1,0 +1,14 @@
+{
+  "name": "box",
+  "description": "box布局",
+  "version": "0.0.1",
+  "keywords": [
+    "box",
+    "ui"
+  ],
+  "dependencies": {
+  },
+  "main" : "index.html",
+  "data" : "data.js",
+  "demo": ""
+}

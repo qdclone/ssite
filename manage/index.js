@@ -14,16 +14,17 @@ process.on('uncaughtException', function (err) {
 
 app.set('name', meta.name);
 app.set('version', meta.version);
-app.set('port', process.env.PORT || 6000);
-app.set('root', path.resolve(__dirname, './'));
+app.set('port', process.env.PORT || 3000);
+app.set('root', path.resolve(__dirname, '../'));
 app.set('logger', console);
 app.enable('trust proxy');
 
 app.use(compress());
 
-app.use(router());
+app.use(router({'index': '/manage'}));
 
-app.use('/public', express.static(app.get('root') + '/public'));
+//app.use('/public', express.static(app.get('root') + './public'));
+app.use('/manage', express.static(__dirname));
 
 if (require.main === module) {
     app.listen(app.get('port'), function () {

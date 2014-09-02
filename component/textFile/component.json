@@ -1,0 +1,14 @@
+{
+  "name": "textField",
+  "description": "空文本",
+  "version": "0.0.1",
+  "keywords": [
+    "text",
+    "ui"
+  ],
+  "dependencies": {
+  },
+  "main" : "index.html",
+  "data" : "data.js",
+  "demo": ""
+}
