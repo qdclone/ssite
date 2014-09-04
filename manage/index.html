@@ -14,40 +14,45 @@
 	<link href="/manage/static/index.scss" rel="stylesheet">
 </head>
 <body>
-<!-- 	<div id="loading" style="display: none;">
-		<div class="logo"></div>
-		<div class="mask"></div>
-		<div class="indicator" style="height: 100%;"></div>
-		<span>
-		正在读取 ...
-		</span>
-	</div>
- -->
- 
-	<div id="workspace">
-		<div id="components" style="-webkit-transform: translateX(180px); transform: translateX(180px);">
-		</div>
-		<div id="screens" class="screens" data-selectable="true">
-			<div id="screensA6AC7F402339" class="screen portrait iphone x100 active" data-selectable="true" style="height: 630px; width: 362px; margin-left: -181px; display: block;">
-				<div id="canvassA6AC7F402339" class="canvas" data-selectable="true">
+<div id="b-control-elements">
+ 	<div class="b-top-bar">
+ 		<!-- 顶部菜单栏 -->
+ 		<div class="b-top-bar-actions">
+ 		</div>
 
-				</div>
+ 		<!-- 屏幕尺寸控制 -->
+ 		<div class="b-top-bar-breakpoints">
+	 		<div class="b-top-bar-breakpoint-wrap">
+	    		<div id="b-breakpoint_51c25196560bea4decd8e7f3" class="b-top-bar-breakpoint b-breakpoint_-1" style="width: -1px;">
+	        		<div class="b-breakpoint-color" style="background-color: transparent;"></div>
+	            </div>
 			</div>
 		</div>
-		<div id="screen_links" style="right: 0px;">
-			<div class="links jscroll" style="overflow: hidden; padding: 0px; width: 180px;">
 
-			</div>
-		</div>
-		<div id="inspector">
-		</div>
-	</div>
+ 	</div>
 
+ 	<!--  -->
+ 	<div id="b-panel" class="b-panel ui-draggable ready b-preview-toggleable">
+    	<header class="b-panel-header" title="Doubleclick to toggle"></header>
+    </div>
 
-<div id="FS_Custom_Container" class="m_panel">
-    <div class="custom_panel">
-		
+    <!--  -->
+    <div id="b-toolbar" class="b-toolbar ui-draggable b-preview-toggleable">
+	    <div class="b-toolbar-buttons">
+	        <ul class="b-toolbar-button-list">
+	            <li>
+	                <span class="b-toolbar-button b-toolbar-button-container" data-widget-type="container" title="">
+	                    Container <img src="/_static/images/widget-types/container.svg" alt="">
+	                </span>
+	            </li>
+	        </ul>
+	    </div>
 	</div>
 </div>
+
+<div class="b-workspace" id="froont-workspace" style="min-height: 543px; margin-right: auto; margin-left: auto; width: 320px;">
+	
+</div>
+
 </body>
 </html>

@@ -22,6 +22,20 @@ demo :
 }
 ```
 
+## 阶段
+
+### 第一阶段
+
+先简单的根据 component.json 文件的配置来定位组件
+
+支持html格式、js事件格式入口
+
+### 第二阶段
+
+只支持 html 格式入口 无必须 component.json 文件
+
+外部直接标签名定位组件资源，标签特殊属性控制版本及组件精确定位（version、import 属性）
+
 component dialog demo 非推荐
 
 ```javascript

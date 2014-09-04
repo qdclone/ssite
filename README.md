@@ -42,21 +42,33 @@ ssite
 	- [ ] 组件拖拽控制
 	- [ ] 组件属性管理
 
-## 第一阶段
+## 阶段
+
+### 第一阶段
 
 拖拽布局生成静态页面，普通杂志类；包含图文排列。
 
 定义：组件只支持纯html、固定通栏布局、支持拖拽操作、不支持子集关系
 
-## 第二阶段
+### 第二阶段
 
 后台（数据管理、页面管理、组件管理）、完善组件方案通用性
 
-## 第三阶段
+### 第三阶段
 
 提取组件方案+基础组件+整个后台管理方案 打包成项目基础环境
 
 ## 兼容性
 
 生成页面兼容目标 Android Browser 2.3+、iOS Safari 6+、Chrome 21+
+
+## 参考
+
+polymer http://polymer-project.org/
+
+froont https://froont.com/
+
+Sketch3 http://bohemiancoding.com/
+
+modao https://modao.io/
 

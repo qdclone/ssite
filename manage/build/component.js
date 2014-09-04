@@ -30,12 +30,13 @@ component.prototype.toHtml = function(){
 		console.log('error : ' + JSON.stringify(cp) + ' ' + JSON.stringify(option));
 		return null;
 	}
+	
 	//console.log(item);
 	var componentPath = path.join(ssite.root, 'component/' + item.name + '/component.json');
 	//console.log(componentPath);
 	if (!fs.existsSync(componentPath)) {
 		console.log('error: no component ' + item.name);
-		return '';
+		return '<!-- ‘' + item.name + '’ no component -->';
 	}
 
 	var componentInfo = require(componentPath);
