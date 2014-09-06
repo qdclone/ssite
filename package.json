@@ -14,13 +14,7 @@
         "start": "supervisor manage/index.js"
     },
     "dependencies": {
-        "http-proxy": "1.1.5",
-        "compression": "1.0.8",
-        "errorhandler": "1.1.1",
-        "express": "4.5.1",
-        "ejs": "*",
-        "node-sass": "~0.8.0",
-        "less-middleware": "*"
+        "yogurt": "*"
     },
     "devDependencies": {
         "supervisor": "*"

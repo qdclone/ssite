@@ -10,12 +10,11 @@
 	<script src="js/jquery-1.9.1.js"></script>
 	<script src="js/jquery-ui-1.10.2.custom.js"></script>
 	<script src="js/spite.js"></script>
-	
 	<link href="/manage/static/index.scss" rel="stylesheet">
 </head>
 <body>
-<div id="b-control-elements">
- 	<div class="b-top-bar">
+<div id="ss-control-elements">
+ 	<div class="b-top-bar hidden">
  		<!-- 顶部菜单栏 -->
  		<div class="b-top-bar-actions">
  		</div>
@@ -23,31 +22,36 @@
  		<!-- 屏幕尺寸控制 -->
  		<div class="b-top-bar-breakpoints">
 	 		<div class="b-top-bar-breakpoint-wrap">
-	    		<div id="b-breakpoint_51c25196560bea4decd8e7f3" class="b-top-bar-breakpoint b-breakpoint_-1" style="width: -1px;">
-	        		<div class="b-breakpoint-color" style="background-color: transparent;"></div>
+	    		<div id="" class="b-top-bar-breakpoint">
+	        		<div class="b-breakpoint-color"></div>
 	            </div>
 			</div>
 		</div>
 
  	</div>
 
- 	<!--  -->
- 	<div id="b-panel" class="b-panel ui-draggable ready b-preview-toggleable">
-    	<header class="b-panel-header" title="Doubleclick to toggle"></header>
+ 	<!-- 组件列表 -->
+ 	<div class="sidebar left">
+ 		<div class="sidebar-container">
+ 			<div id="components">
+	            <div class="header">组件列表</div>
+	            <div class="sidepane">
+
+	            </div>
+ 			</div>
+ 		</div>
     </div>
 
-    <!--  -->
-    <div id="b-toolbar" class="b-toolbar ui-draggable b-preview-toggleable">
-	    <div class="b-toolbar-buttons">
-	        <ul class="b-toolbar-button-list">
-	            <li>
-	                <span class="b-toolbar-button b-toolbar-button-container" data-widget-type="container" title="">
-	                    Container <img src="/_static/images/widget-types/container.svg" alt="">
-	                </span>
-	            </li>
-	        </ul>
-	    </div>
-	</div>
+    <!-- 控制面板 -->
+ 	<div class="sidebar right">
+ 		<div class="sidebar-container">
+ 			<div id="properties">
+	            <div class="header">PROPERTIES</div>
+	            <div class="sidepane" style="height: 798px;"></div>
+ 			</div>
+ 		</div>
+    </div>
+
 </div>
 
 <div class="b-workspace" id="froont-workspace" style="min-height: 543px; margin-right: auto; margin-left: auto; width: 320px;">
