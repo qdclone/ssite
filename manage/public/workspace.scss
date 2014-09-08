@@ -7,8 +7,12 @@
 	}
 
 	.portlet-placeholder {
-		border: 1px dotted black;
-		margin: 0 1em 1em 0;
-		height: 50px;
+		padding: 4px;
+		&:after {
+			content: ' ';
+			display: block;
+			height: 50px;
+			outline: 1px dashed rgba(0,0,0,0.6) !important;
+		}
 	}
 }
