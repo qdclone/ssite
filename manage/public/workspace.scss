@@ -1,0 +1,14 @@
+
+.workspace {
+    background-color: #fff;
+	&.center {
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+	.portlet-placeholder {
+		border: 1px dotted black;
+		margin: 0 1em 1em 0;
+		height: 50px;
+	}
+}

@@ -40,32 +40,32 @@
  		<div class="sidebar-container">
  			<div id="components">
 	            <div class="header">组件列表</div>
-	            <div class="sidepane clearfix" style="height: 798px;">
-	            	<div class="item ui-draggable">
+	            <div class="sidepane portlets clearfix" style="height: 798px;">
+	            	<div class="item ui-draggable portlet-header">
 	            		<div class="preview">
 	            			<img src="./img/component/hero_unit.png" />
 	            		</div>
 	            		<span class="name">Jumbotron</span>
 	            	</div>
-	            	<div class="item ui-draggable">
+	            	<div class="item ui-draggable portlet-header">
 	            		<div class="preview">
 	            			<img src="./img/component/list_group.png" />
 	            		</div>
 	            		<span class="name">list group</span>
 	            	</div>
-	            	<div class="item ui-draggable">
+	            	<div class="item ui-draggable portlet-header">
 	            		<div class="preview">
 	            			<img src="./img/component/list_group.png" />
 	            		</div>
 	            		<span class="name">list group</span>
 	            	</div>
-	            	<div class="item ui-draggable">
+	            	<div class="item ui-draggable portlet-header">
 	            		<div class="preview">
 	            			<img src="./img/component/hero_unit.png" />
 	            		</div>
 	            		<span class="name">Jumbotron</span>
 	            	</div>
-	            	<div class="item ui-draggable">
+	            	<div class="item ui-draggable portlet-header">
 	            		<div class="preview">
 	            			<img src="./img/component/list_group.png" />
 	            		</div>
@@ -90,9 +90,18 @@
 
 </div>
 <div class="fr-workspace-spacer-top"></div>
-<div class="workspace center" id="workspace" style="min-height: 543px; width: 320px;">
-	
+
+<link href="workspace.scss" rel="stylesheet" />
+<div class="workspace portlets center" id="workspace" style="min-height: 543px; width: 320px;">
+
+	<div class="item ui-draggable portlet-header">
+		<div class="preview">
+			<img src="./img/component/list_group.png" />
+		</div>
+		<span class="name">list group</span>
+	</div>
 </div>
 
+<script src="index.js"></script>
 </body>
 </html>

@@ -83,6 +83,7 @@ body {
     top: 62px;
     z-index: 10;
     background-color: #f7f7f7;
+    border-top: 1px solid #aaaaaa;
 }
 
 #left-sidebar {
@@ -103,7 +104,7 @@ body {
     -moz-box-shadow: 1px 0px 2px rgba(0,0,0,.3);
     -webkit-box-shadow: 1px 0px 2px rgba(0,0,0,.3);
     border-right: 1px solid #111010;
-    text-shadow: 0 -1px 0 #1e1d1c;
+    // text-shadow: 0 -1px 0 #1e1d1c;
 }
 
 .sidebar-container {
@@ -130,11 +131,4 @@ body {
 
 .fr-workspace-spacer-top{
     height: 162px;
-}
-.workspace {
-    background-color: #fff;
-}
-.workspace.center {
-    margin-left: auto;
-    margin-right: auto;
 }
