@@ -1,0 +1,140 @@
+
+body {
+	background: url(./img/chess.gif) repeat 0 0;
+	color: #333333;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 60px;
+    background-color: #e3e8ea;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+
+.top-bar-actions {
+    width: 100%;
+    background: #e3e8ea;
+    height: 30px;
+    line-height: 26px;
+    font-size: 13px;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+
+    #logo {
+        font-size: 1.2em;
+        display: inline-block;
+        margin: 0 0 0 1em;
+    }
+
+}
+
+.top-bar-breakpoints {
+    background-color: rgba(255,255,255,0.8);
+    height: 32px;
+    line-height: 30px;
+    width: 100%;
+    position: relative;
+    -webkit-transition: background-color 300ms ease;
+    -moz-transition: background-color 300ms ease;
+    -o-transition: background-color 300ms ease;
+    transition: background-color 300ms ease;
+
+    /* 临时 */
+    background: rgba(255,255,255,0.8) url(./img/breakpoints.jpg) no-repeat center center;
+}
+
+.top-bar-breakpoints .top-bar-breakpoint {
+    font-family: Tahoma,sans-serif;
+    background: transparent;
+    display: block;
+    position: relative;
+    height: 32px;
+    margin-top: -32px;
+    font-size: 11px;
+    margin: 0 auto;
+    text-align: left;
+    border: none;
+    padding: 0;
+    -webkit-transition: background-color 150ms linear;
+    -moz-transition: background-color 150ms linear;
+    -o-transition: background-color 150ms linear;
+    -ms-transition: background-color 150ms linear;
+    transition: background-color 150ms linear
+}
+
+.top-bar-actions, .top-bar-breakpoints {
+    -webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,0.66);
+    -moz-box-shadow: 0 0 15px 0 rgba(0,0,0,0.66);
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.66);
+    -webkit-transform: translate3d(0,0,0)
+}
+
+/** Side bars **/
+#left-sidebar, #right-sidebar {
+    position: fixed;
+    top: 62px;
+    z-index: 10;
+    background-color: #f7f7f7;
+}
+
+#left-sidebar {
+    left: 0;
+    border-right: 1px solid #aaaaaa;
+    width: 260px;
+}
+
+#right-sidebar {
+    right: 0;
+    border-left: 1px solid #aaaaaa;
+    width: 260px;
+}
+
+/****************************** LEFT SIDEBAR ********************************/
+.sidebar.left {
+    box-shadow: 1px 0px 2px rgba(0,0,0,.3);
+    -moz-box-shadow: 1px 0px 2px rgba(0,0,0,.3);
+    -webkit-box-shadow: 1px 0px 2px rgba(0,0,0,.3);
+    border-right: 1px solid #111010;
+    text-shadow: 0 -1px 0 #1e1d1c;
+}
+
+.sidebar-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidebar-collapser {
+    cursor: pointer;
+    position: absolute;
+    top: 43%;
+    margin-top: -13px;
+    width: 8px;
+    height: 26px;
+    background-color: #454342;
+    border-radius: 0px;
+    border: 1px solid #11100f;
+    z-index: 1000;
+    opacity: 0.7;
+}
+
+
+
+.fr-workspace-spacer-top{
+    height: 162px;
+}
+.workspace {
+    background-color: #fff;
+}
+.workspace.center {
+    margin-left: auto;
+    margin-right: auto;
+}
