@@ -21,6 +21,9 @@
  			<h1 id="logo" class="preview-toggleable">
  				<span title="">Ssite</span>
  			</h1>
+ 			<div class="top-bar-actions-rights">
+ 				<a href="javascript:;" id="preview">预览</a>
+ 			</div>
  		</div>
 
  		<!-- 屏幕尺寸控制 -->
@@ -46,31 +49,18 @@
 	            		</div>
 	            		<span class="name">Jumbotron</span>
 	            	</div>
-	            	<div class="item ui-draggable portlet-header">
-	            		<div class="preview">
-	            			<img src="./img/component/list_group.png" />
-	            		</div>
-	            		<span class="name">list group</span>
-	            	</div>
-	            	<div class="item ui-draggable portlet-header">
-	            		<div class="preview">
-	            			<img src="./img/component/list_group.png" />
-	            		</div>
-	            		<span class="name">list group</span>
-	            	</div>
-	            	<div class="item ui-draggable portlet-header">
-	            		<div class="preview">
-	            			<img src="./img/component/hero_unit.png" />
-	            		</div>
-	            		<span class="name">Jumbotron</span>
-	            	</div>
-	            	<div class="item ui-draggable portlet-header">
-	            		<div class="preview">
-	            			<img src="./img/component/list_group.png" />
-	            		</div>
-	            		<span class="name">list group</span>
-	            	</div>
 	            </div>
+		 		<script id="sidepane-template" type="text/x-handlebars-template">
+		 			{{#each list}}
+		        	<div class="item ui-draggable portlet-header" name="{{name}}" import="{{url}}">
+		        		<div class="preview">
+		        			<img src="./img/component/list_group.png" />
+		        		</div>
+		        		<span class="name">list group</span>
+		        	</div>
+		        	{{/each}}
+				</script>
+
  			</div>
  		</div>
     </div>
@@ -94,14 +84,9 @@
 <link href="workspace.scss" rel="stylesheet" />
 <div class="workspace portlets center" id="workspace" style="min-height: 543px; width: 320px;">
 
-	<div class="item ui-draggable portlet-header">
-		<div class="preview">
-			<img src="./img/component/list_group.png" />
-		</div>
-		<span class="name">list group</span>
-	</div>
 </div>
 
+<script src="handlebars-v2.0.0.js"></script>
 <script src="index.js"></script>
 </body>
 </html>

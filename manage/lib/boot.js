@@ -34,7 +34,7 @@ module.exports = function(parent, options){
           break;
         case 'list':
           method = 'get';
-          path = '/' + name + 's';
+          path = '/' + name + '/list';
           break;
         case 'edit':
           method = 'get';
@@ -50,11 +50,13 @@ module.exports = function(parent, options){
           break;
         case 'index':
           method = 'get';
-          path = '/';
+          path = '/' + name;
           break;
         default:
+          method = 'get';
+          path = '/' + name + '/' + key;
           /* istanbul ignore next */
-          throw new Error('unrecognized route: ' + name + '.' + key);
+          //throw new Error('unrecognized route: ' + name + '.' + key);
       }
 
       // setup

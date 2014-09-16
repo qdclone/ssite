@@ -32,6 +32,7 @@ app.use(compileSass(root), {
 // load controllers
 require('./lib/boot')(app, { verbose: !module.parent });
 
+app.use('/public/component/', express.static(__dirname + '/../component'));
 app.use(express.static(__dirname + '/public'));
 //app.use(express.static(__dirname));
 //app.use('/public', express.static(app.get('root') + './public'));
