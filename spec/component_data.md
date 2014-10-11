@@ -3,7 +3,9 @@
 
 参考数据格式 http://www.cnblogs.com/xiehuiqi220/archive/2012/11/25/2787461.html
 
-后台管理可以参考 http://www.ewikisoft.com/json2form/doc.php
+后台管理可以参考 
+http://www.ewikisoft.com/json2form/doc.php
+http://jeremydorn.com/json-editor/
 
 ```javascript
 {

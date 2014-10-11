@@ -20,6 +20,7 @@ app.set('version', meta.version);
 app.set('port', process.env.PORT || 3000);
 app.set('root', path.resolve(__dirname, '../'));
 app.set('logger', console);
+app.set('view engine', 'ejs');
 app.enable('trust proxy');
 
 app.use(compress());

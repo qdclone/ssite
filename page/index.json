@@ -4,19 +4,25 @@
 	"meta": {
 		"viewport" : "width=device-width"
 	},
-	"createTime": 123123123,
-	"layout" : [
-		"header",
-		"header@0.0.1:index.html",
+	"createTime": 1412314935646,
+	"body" : [
 		{
 			"name": "header",
 			"version": "0.0.1",
+			"import": "/component/header/index.html",
 			"style": "background-color: red;",
 			"data": {"bgColor": "#fff", "fontColor": "#000"}
 		},
 		{
+			"name": "text-field",
+			"version": "0.0.1",
+			"import": "/component/text-field/index.html",
+			"style": "background-color: red;",
+			"data": {"bgColor": "#fff", "fontColor": "#000", "content": "全部内容"}
+		},
+		{
 			"name": "box",
-			"child": [
+			"children": [
 				{
 					"name": "header",
 					"boxFlex": 1

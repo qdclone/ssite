@@ -74,4 +74,17 @@ modao https://modao.io/
 
 jetstrap https://jetstrap.com/demo
 
+
+## 参考组件集
+
+http://aralejs.org/
+
 brix http://etaoux.github.io/brix/
+
+http://gallery.kissyui.com/
+
+http://amazeui.org/getting-started/widget
+
+http://www.builive.com/start/web-start.php
+
+

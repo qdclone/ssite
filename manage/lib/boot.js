@@ -11,7 +11,7 @@ module.exports = function(parent, options){
     verbose && console.log('\n   %s:', name);
     var obj = require('./../controllers/' + name);
     var name = obj.name || name;
-    var prefix = obj.prefix || '';
+    var prefix = obj.prefix || '/api';
     var app = express();
     var handler;
     var method;

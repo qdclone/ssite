@@ -6,6 +6,7 @@
 
 component [component.json](https://github.com/component/spec/blob/master/component.json/specifications.md)
 
+http://madebymany.github.io/sir-trevor-js/example.html
 
 demo : 
 
